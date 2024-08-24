@@ -30,60 +30,73 @@
           <div class="row g-3" style="margin-top: 20px;">
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Campus</label>
-              <input type="email" class="form-control" placeholder="Digite seu campus" id="inputEmail4">
+              <input type="email" class="form-control" placeholder="Digite seu campus" id="campus">
             </div>
             <div class="col-md-6">
               <label for="inputMatricula4" class="form-label">Número de matrícula</label>
-              <input type="text" class="form-control" id="inputMatricula4">
+              <input type="text" class="form-control" id="matricula">
             </div>
 
             <div class="col-md-6">
               <label for="inputCurso" class="form-label">Curso</label>
-              <input type="text" class="form-control" placeholder="Seu curso" id="inputCurso">
+              <input type="text" class="form-control" placeholder="Seu curso" id="curso">
             </div>
 
             <div class="col-md-2">
               <label for="inputPeriodo" class="form-label">Período</label>
-              <select id="inputPeriodo" class="form-select">
+              <select id="periodo" class="form-select">
                 <option selected>Escolha...</option>
-                <option>1º</option>
-                <option>2º</option>
-                <option>3º</option>
-                <option>4º</option>
-                <option>5º</option>
-                <option>6º</option>
+                <option value="op1">1º</option>
+                <option value="op2">2º</option>
+                <option value="op3">3º</option>
+                <option value="op4">4º</option>
+                <option value="op5">5º</option>
+                <option value="op6">6º</option>
               </select>
             </div>
             <div class="col-md-2">
               <label for="inputTurno" class="form-label">Turno</label>
-              <select id="inputTurno" class="form-select">
+              <select id="turno" class="form-select">
                 <option selected>Escolha...</option>
-                <option>Manhã</option>
-                <option>Tarde</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
               </select>
             </div>
             <div class="col-md-2">
               <label for="inputSituacao" class="form-label">Situação</label>
-              <select id="inputSituacao" class="form-select">
+              <select id="situacao" class="form-select">
                 <option selected>Escolha...</option>
-                <option>Matriculado</option>
-                <option>Graduado</option>
-                <option>Desvinculado</option>
+                <option value="1">Matriculado</option>
+                <option value="2">Graduado</option>
+                <option value="3">Desvinculado</option>
               </select>
             </div>
           </div>
 
           <div class="d-flex justify-content-center" style="margin-top: 21%;">
-            <button class="btn btn-outline-success me-5" onclick="voltarPagina()" type="button"
+            <button class="btn btn-outline-success me-5" onclick="voltarPaginaInstitucional()" type="button"
               style="width: 180px; height: 58px; font-size: 20px;border-radius: 15px;">Voltar</button>
-            <button class="btn btn-success" onclick="mudarPagina()" type="button"
+            <button class="btn btn-success" onclick="mudarPaginaInstitucional()" type="button"
               style="width: 180px; height: 58px; font-size: 20px;border-radius: 15px;">Continue</button>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <script src="script/index.js"></script>
+
+  <script>
+    function salvaInstitucional(){
+document.getElementById("campus").value = localStorage.campus;
+document.getElementById("matricula").value = localStorage.matricula;
+document.getElementById("curso").value = localStorage.curso;
+document.getElementById("periodo").value = localStorage.periodo;
+document.getElementById("turno").value = localStorage.turno;
+document.getElementById("situacao").value = localStorage.situacao;
+}
+salvaInstitucional();
+</script>
+
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
