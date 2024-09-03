@@ -1,0 +1,12 @@
+{
+    "name": "sre/pdf",
+    "autoload": {
+        "psr-4": {
+            "app\\":"app/"
+        }
+    },
+    "require": {
+        "dompdf/dompdf": "^3.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
