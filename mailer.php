@@ -18,8 +18,8 @@ try {
     // Configurações do servidor
     $mail->isSMTP();        //Devine o uso de SMTP no envio
     $mail->SMTPAuth = true; //Habilita a autenticação SMTP
-    $mail->Username   = 'joaopedro.s.dev@gmail.com';
-    $mail->Password   = '!Eu2410#Dev';
+    $mail->Username   = 'EmaildoDesinatário';
+    $mail->Password   = 'SenhadoDestinatário';
     // Criptografia do envio SSL também é aceito
     $mail->SMTPSecure = 'tls';
     // Informações específicadas pelo Google
@@ -28,7 +28,7 @@ try {
     // Define o remetente
     $mail->setFrom('nao-responder@ifpe.edu.br', 'IFPE');
     // Define o destinatário
-    $mail->addAddress('joaopedro.s.dev@gmail.com', 'João Pedro');
+    $mail->addAddress('EmaildoDesinatário', 'Nome do Destinatário');
     // Conteúdo da mensagem
     $mail->isHTML(true);  // Seta o formato do e-mail para aceitar conteúdo HTML
     $mail->Subject = 'Teste Envio de Email 1.0';
