@@ -24,7 +24,7 @@ try {
     $mail->SMTPSecure = 'tls';
     // Informações específicadas pelo Google
     $mail->Host = 'smtp.email.com';
-    $mail->Port = 587;
+    $mail->Port = FES;
     // Define o remetente
     $mail->setFrom('nao-responder@ifpe.edu.br', 'IFPE');
     // Define o destinatário
