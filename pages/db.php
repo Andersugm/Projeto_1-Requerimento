@@ -3,7 +3,7 @@
 $dbHost = 'Localhost:3306';
 $dbUsername = 'root';
 $dbName = 'sre';
-$dbPassword = 'root';
+$dbPassword = '';
 //ajustar os dados acima com base na sua config de acesso ao MySQL (dbPassword e dbUsername)
 try {
     $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);

@@ -16,10 +16,7 @@ if(isset($_POST['submit'])) {
   <title>Informativa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style/global.css">
-  <link rel="stylesheet" href="/style/informativa.css">
-  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+
   <style>
 
     * {
@@ -96,15 +93,12 @@ p {
       <div class="bar-green"></div>
       <div class="p-4 mx-3">
         <h2>Requerimento</h2>
-        <p class="mt-3">Este formulário tem como propósito auxiliar os estudantes na realização
-          de requerimentos de forma digital.</p>
+        <p class="mt-3">Este formulário tem como propósito auxiliar os estudantes na realização de requerimentos de forma digital.</p>
         <p class="mt-3">Preencha o formulário de acordo com a sua necessidade.</p>
-        <p class="mt-3">Caso possua alguma dúvida, preparamos um vídeo tutorial que pode ser
-          visualizado neste link:
-          [<a href="http://bit.ly/tutorial-requerimento">http://bit.ly/tutorial-requerimento</a>]
+        <p class="mt-3">Caso possua alguma dúvida, preparamos um vídeo tutorial que pode ser visualizado neste link:
+          <a href="http://bit.ly/tutorial-requerimento">http://bit.ly/tutorial-requerimento</a>
         </p>
-        <p class="mt-3">Para maiores informações, entre em contato com a CRADT através do
-          endereço de e-mail
+        <p class="mt-3">Para maiores informações, entre em contato com a CRADT através do endereço de e-mail
           <a href="emailto:cradt@igarassu.ifpe.edu.br">cradt@igarassu.ifpe.edu.br</a>
         </p>
         <div class="border-top"></div>
@@ -119,9 +113,9 @@ p {
   </div>
 </form>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
   <script src="/js/informativa.js"></script>
 </body>
-
 </html>

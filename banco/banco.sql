@@ -3,7 +3,7 @@ CREATE DATABASE sre;
 USE sre;
 
 CREATE TABLE requerimentos (
-    InputRequerimento   INT AUTO_INCREMENT PRIMARY KEY,
+    InputRequerimento   INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     campus              VARCHAR(35) NOT NULL,
     nome                VARCHAR(100) NOT NULL,
     num_matricula       VARCHAR(30) NOT NULL UNIQUE,
@@ -19,8 +19,8 @@ CREATE TABLE requerimentos (
     obs                 VARCHAR(250) NOT NULL
 );
 
-
-
 --Para alimentar, caso necessário:
 INSERT INTO requerimentos (InputRequerimento, campus, nome, num_matricula, periodo, curso, turno, email, usr_cpf, usr_rg, usr_org, tipo_vinculo, contato, obs) VALUES
 ('1', 'IGARASSU', 'DOLLY', 'ONLYPIPIUS', '6', 'TECNOLOGO EM SISTEMAS PARA INTERNET', 'TARDE', 'TEKOMONAKAMA.TESTE@GMAIL.COM', '69696969690', '6969690', 'SDS', '1', '081969696969 ', 'No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.');
+--Implementação adicional: id para poder usar a mesma requisição
+
