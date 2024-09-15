@@ -14,15 +14,15 @@ $mail = new PHPMailer(true);
 
 try {
     //CONFIGS DO SERVER
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                   //APRESENTA O DEBUG NO TERMINAL
-    $mail->isSMTP();                                           //DEFINE O ENVIO POR SMTP
-    $mail->SMTPAuth   = true;                                  //HABILITA A AUTENTICAÇÃO
-    $mail->Host       = 'smtp.mailgun.org';                    //HOST DO ENVIO
-    $mail->Username   = 'postmaster@sandbox4b38e0ec88804de396d579420191c07f.mailgun.org';       //USERNAME DO SMTP
-    $mail->Password   = 'd2a260884cedf4b3b577cf03c9f979f1-2b755df8-c6aa286f';                   //PASSWORD DO SMTP
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        //DEFINE A ENCRIPTAÇÃO
-    $mail->Port       = 587;                                   //PORTA TCP PARA CONEXÃO; usar 587 se tiver setado SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
-    $mail->CharSet    = 'UTF-8';                               //PADRONIZA OS CARACTERES
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                          //APRESENTA O DEBUG NO TERMINAL
+    $mail->isSMTP();                                                //DEFINE O ENVIO POR SMTP
+    $mail->SMTPAuth   = true;                                       //HABILITA A AUTENTICAÇÃO
+    $mail->Host       = 'EndereçoDoSeuHostSMTP';                    //HOST DO ENVIO
+    $mail->Username   = 'SeuUserNameSTMP';                          //USERNAME DO SMTP
+    $mail->Password   = 'SuaSenhaSMTP';                             //PASSWORD DO SMTP
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;             //DEFINE A ENCRIPTAÇÃO
+    $mail->Port       = 587;                                        //PORTA TCP PARA CONEXÃO; usar 587 se tiver setado SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
+    $mail->CharSet    = 'UTF-8';                                    //PADRONIZA OS CARACTERES
 
     //CONFIGURA O EMAIL DE ENVIO E QUEM ENVIOU
     $mail->setFrom('EmailDoRemetente', 'NomeDoRemetente');                     //DEFINE O EMAIL E NOME DO REMETENTE
